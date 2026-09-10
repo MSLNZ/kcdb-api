@@ -56,12 +56,14 @@ nav:
     - examples/chemistry_biology.md
     - examples/ionizing_radiation.md
     - examples/physics.md
+    - examples/physics_async.md
   - API:
     - Chemistry and Biology: api/chemistry_biology.md
     - Ionizing Radiation: api/ionizing_radiation.md
     - Physics: api/general_physics.md
     - KCDB: api/kcdb.md
     - Reference Data and Results: api/types.md
+    - typing: api/typing.md
 
 markdown_extensions:
   - admonition

@@ -16,7 +16,7 @@ from typing import Any
 from urllib.request import urlopen
 
 from msl.kcdb import ChemistryBiology, Physics, Radiation, types
-from msl.kcdb.kcdb import KCDB
+from msl.kcdb.kcdb import SyncKCDB
 
 path = Path("compare.json")
 if path.exists():
@@ -39,7 +39,7 @@ renamed_map = {
 }
 
 search_map = {
-    "QuickSearchCriteria": KCDB.quick_search,
+    "QuickSearchCriteria": SyncKCDB.quick_search,
     "SearchCriteriaChemistryAndBiology": ChemistryBiology.search,
     "SearchCriteriaPhysics": Physics.search,
     "SearchCriteriaRadiation": Radiation.search,
