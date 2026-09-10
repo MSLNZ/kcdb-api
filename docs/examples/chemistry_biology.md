@@ -16,7 +16,7 @@ Running this script outputs the following, although, some values may change from
 
 ```
 Getting all reference data for Chemistry and Biology...
-  There are 104 countries
+  There are 105 countries
   There are 1754 analytes
   There are 15 categories
 All analytes related to 'boron'...
