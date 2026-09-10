@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/MSLNZ/msl-kcdb/dev/examples/chemistry_biology/">
+        <link rel="canonical" href="https://github.com/MSLNZ/msl-kcdb/dev/examples/physics_async/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../physics/">
       
       
-        <link rel="next" href="../ionizing_radiation/">
+        <link rel="next" href="../../api/chemistry_biology/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Chemistry and Biology - MSL KCDB</title>
+        <title>Physics (async) - MSL KCDB</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chemistry-and-biology" class="md-skip">
+        <a href="#physics-async" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chemistry and Biology
+              Physics (async)
             
           </span>
         </div>
@@ -564,37 +564,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Chemistry and Biology
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../chemistry_biology/" class="md-nav__link">
         
   
   
@@ -610,48 +583,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Script
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Output
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -717,10 +648,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../physics_async/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics (async)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -736,6 +694,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Script
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1055,74 +1055,47 @@
   
 
 
-<h1 id="chemistry-and-biology">Chemistry and Biology<a class="headerlink" href="#chemistry-and-biology" title="Permanent link">¤</a></h1>
-<p>Example script showing how to use the <a class="autorefs autorefs-internal" title="            ChemistryBiology" href="../../api/chemistry_biology/#msl.kcdb.chemistry_biology.ChemistryBiology">ChemistryBiology</a> class to extract information from the <abbr title="Key Comparison Database">KCDB</abbr>.</p>
+<h1 id="physics-async">Physics (async)<a class="headerlink" href="#physics-async" title="Permanent link">¤</a></h1>
+<p>Example script showing how to use the <a class="autorefs autorefs-internal" title="            AsyncPhysics" href="../../api/general_physics/#msl.kcdb.general_physics.AsyncPhysics">AsyncPhysics</a> class to asynchronously extract information from the <abbr title="Key Comparison Database">KCDB</abbr>.</p>
 <h2 id="script">Script<a class="headerlink" href="#script" title="Permanent link">¤</a></h2>
 <!-- fmt: off -->
-<div class="highlight"><pre><span></span><code><span class="sd">"""Search the "Chemistry and Biology" metrology domain of the KCDB."""</span>
+<div class="highlight"><pre><span></span><code><span class="sd">"""Asynchronously search the "General Physics" metrology domain of the KCDB."""</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">msl.kcdb</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChemistryBiology</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
 
-<span class="n">chem_bio</span> <span class="o">=</span> <span class="n">ChemistryBiology</span><span class="p">()</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">TYPE_CHECKING</span>
 
-<span class="c1">#</span>
-<span class="c1"># Get all reference data for the "Chemistry and Biology" metrology domain</span>
-<span class="c1">#</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Getting all reference data for </span><span class="si">{</span><span class="n">chem_bio</span><span class="o">.</span><span class="n">DOMAIN</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">..."</span><span class="p">)</span>
-<span class="n">countries</span> <span class="o">=</span> <span class="n">chem_bio</span><span class="o">.</span><span class="n">countries</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  There are </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">countries</span><span class="p">)</span><span class="si">}</span><span class="s2"> countries"</span><span class="p">)</span>
-<span class="n">analytes</span> <span class="o">=</span> <span class="n">chem_bio</span><span class="o">.</span><span class="n">analytes</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  There are </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">analytes</span><span class="p">)</span><span class="si">}</span><span class="s2"> analytes"</span><span class="p">)</span>
-<span class="n">categories</span> <span class="o">=</span> <span class="n">chem_bio</span><span class="o">.</span><span class="n">categories</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  There are </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">categories</span><span class="p">)</span><span class="si">}</span><span class="s2"> categories"</span><span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">msl.kcdb</span><span class="w"> </span><span class="kn">import</span> <span class="n">AsyncPhysics</span>
 
-<span class="c1">#</span>
-<span class="c1"># Find all analytes that are related to "boron"</span>
-<span class="c1">#</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"All analytes related to 'boron'..."</span><span class="p">)</span>
-<span class="n">boron_analytes</span> <span class="o">=</span> <span class="n">chem_bio</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">analytes</span><span class="p">,</span> <span class="s2">"boron"</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">analyte</span> <span class="ow">in</span> <span class="n">boron_analytes</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  </span><span class="si">{</span><span class="n">analyte</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">msl.kcdb.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">MetrologyArea</span><span class="p">,</span> <span class="n">ResultsPhysics</span>
 
-<span class="c1">#</span>
-<span class="c1"># Search the "Chemistry and Biology" database for NMIs that are capable of</span>
-<span class="c1"># performing measurements with "boron" analytes and print some information</span>
-<span class="c1"># about each NMI</span>
-<span class="c1">#</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"All NMIs that have capabilities with 'boron' analytes..."</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">analyte</span> <span class="ow">in</span> <span class="n">boron_analytes</span><span class="p">:</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">chem_bio</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">analyte</span><span class="o">=</span><span class="n">analyte</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">nmi_code</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">category_value</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">nmi_service_code</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">all_cmc_results</span><span class="p">(</span><span class="n">country</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">MetrologyArea</span><span class="p">],</span> <span class="nb">list</span><span class="p">[</span><span class="n">ResultsPhysics</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">"""Asynchronously get all CMCs for a country."""</span>
+    <span class="n">physics</span> <span class="o">=</span> <span class="n">AsyncPhysics</span><span class="p">()</span>
+    <span class="n">areas</span> <span class="o">=</span> <span class="k">await</span> <span class="n">physics</span><span class="o">.</span><span class="n">metrology_areas</span><span class="p">()</span>
+    <span class="n">searches</span> <span class="o">=</span> <span class="p">[</span><span class="n">physics</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">area</span><span class="p">,</span> <span class="n">countries</span><span class="o">=</span><span class="n">country</span><span class="p">,</span> <span class="n">page_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span> <span class="k">for</span> <span class="n">area</span> <span class="ow">in</span> <span class="n">areas</span><span class="p">]</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">searches</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">areas</span><span class="p">,</span> <span class="n">results</span>
+
+
+<span class="n">areas</span><span class="p">,</span> <span class="n">results</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">all_cmc_results</span><span class="p">(</span><span class="s2">"DE"</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">area</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">areas</span><span class="p">,</span> <span class="n">results</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
 </code></pre></div>
 <!-- fmt: on -->
 
 <h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">¤</a></h2>
 <p>Running this script outputs the following, although, some values may change from what you observe when you run this script since information in the <abbr title="Key Comparison Database">KCDB</abbr> is continually changing.</p>
-<div class="highlight"><pre><span></span><code>Getting all reference data for Chemistry and Biology...
-  There are 105 countries
-  There are 1754 analytes
-  There are 15 categories
-All analytes related to 'boron'...
-  Analyte(id=2, label='boron', value='boron')
-All NMIs that have capabilities with 'boron' analytes...
-  NIST (Advanced materials): 8395201
-  NIST (Advanced materials): 8395202
-  NIST (Advanced materials): 8395206
-  NIST (Inorganic solutions): 8391106
-  KRISS (Inorganic solutions): 105-02-BX2
-  BAM (Inorganic solutions): InorgSol-7
-  BAM (Inorganic solutions): InorgSol-15
-  BAM (Inorganic solutions): InorgSol-16
-  SMU (Inorganic solutions): I-10-20
-  UME (Water): G3IK-3110
-  NIM (Water): Water-2
-  VNIIM (Water): 5.1-06
-  NMIJ AIST (Water): 5-01-05
-  NMIJ AIST (Food): 7505-02
-  NRC (Food): MEF-37
-  NRC (Water): TEW42
-  NMIJ AIST (Inorganic solutions): NMIJ CRM 3627
+<div class="highlight"><pre><span></span><code>AUV ResultsPhysics(number_of_elements=52, page_number=0, page_size=1000, total_elements=52, total_pages=1, version_api_kcdb='1.0.13')
+EM ResultsPhysics(number_of_elements=185, page_number=0, page_size=1000, total_elements=185, total_pages=1, version_api_kcdb='1.0.13')
+L ResultsPhysics(number_of_elements=102, page_number=0, page_size=1000, total_elements=102, total_pages=1, version_api_kcdb='1.0.13')
+M ResultsPhysics(number_of_elements=187, page_number=0, page_size=1000, total_elements=187, total_pages=1, version_api_kcdb='1.0.13')
+PR ResultsPhysics(number_of_elements=95, page_number=0, page_size=1000, total_elements=95, total_pages=1, version_api_kcdb='1.0.13')
+T ResultsPhysics(number_of_elements=119, page_number=0, page_size=1000, total_elements=119, total_pages=1, version_api_kcdb='1.0.13')
+TF ResultsPhysics(number_of_elements=25, page_number=0, page_size=1000, total_elements=25, total_pages=1, version_api_kcdb='1.0.13')
 </code></pre></div>
 
 
@@ -1159,7 +1132,7 @@ All NMIs that have capabilities with 'boron' analytes...
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Examples">
+          <a href="../physics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Physics">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1169,20 +1142,20 @@ All NMIs that have capabilities with 'boron' analytes...
                 Previous
               </span>
               <div class="md-ellipsis">
-                Examples
+                Physics
               </div>
             </div>
           </a>
         
         
           
-          <a href="../ionizing_radiation/" class="md-footer__link md-footer__link--next" aria-label="Next: Ionizing Radiation">
+          <a href="../../api/chemistry_biology/" class="md-footer__link md-footer__link--next" aria-label="Next: Chemistry and Biology">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Ionizing Radiation
+                Chemistry and Biology
               </div>
             </div>
             <div class="md-footer__button md-icon">

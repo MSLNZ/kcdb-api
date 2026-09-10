@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://github.com/MSLNZ/msl-kcdb/dev/api/chemistry_biology/">
       
       
-        <link rel="prev" href="../../examples/physics/">
+        <link rel="prev" href="../../examples/physics_async/">
       
       
         <link rel="next" href="../ionizing_radiation/">
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#msl.kcdb.chemistry_biology.ChemistryBiology" class="md-skip">
+        <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology" class="md-skip">
           Skip to content
         </a>
       
@@ -501,6 +501,8 @@
       
         
       
+        
+      
     
     
     
@@ -637,6 +639,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/physics_async/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics (async)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -654,6 +684,8 @@
   
     
     
+      
+        
       
         
       
@@ -772,6 +804,188 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AsyncChemistryBiology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" AsyncChemistryBiology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.BASE_URL" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;BASE_URL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.DOMAIN" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DOMAIN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.MAX_PAGE_SIZE" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;MAX_PAGE_SIZE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;timeout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.analytes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;analytes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.countries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;countries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;domains
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;filter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.metrology_areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;metrology_areas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.non_ionizing_quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;non_ionizing_quantities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;post
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.quick_search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;quick_search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;search
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#msl.kcdb.chemistry_biology.ChemistryBiology" class="md-nav__link">
@@ -1076,6 +1290,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    typing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1106,6 +1348,188 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AsyncChemistryBiology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" AsyncChemistryBiology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.BASE_URL" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;BASE_URL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.DOMAIN" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DOMAIN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.MAX_PAGE_SIZE" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;MAX_PAGE_SIZE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;timeout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.analytes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;analytes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.countries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;countries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;domains
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;filter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;get
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.metrology_areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;metrology_areas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.non_ionizing_quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;non_ionizing_quantities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;post
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.quick_search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;quick_search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;search
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#msl.kcdb.chemistry_biology.ChemistryBiology" class="md-nav__link">
@@ -1343,6 +1767,1372 @@
 
 
 
+<h2 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">AsyncChemistryBiology</span>
+
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology" class="headerlink" title="Permanent link">¤</a></h2>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">AsyncChemistryBiology</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="            AsyncKCDB (msl.kcdb.kcdb.AsyncKCDB)" href="../kcdb/#msl.kcdb.kcdb.AsyncKCDB">AsyncKCDB</a></code></p>
+
+
+
+        <p>Asynchronous Chemistry and Biology class.</p>
+<div class="admonition note">
+<p class="admonition-title">Added in version 1.1.0</p>
+</div>
+
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>timeout</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The maximum number of seconds to wait for a response from the <abbr title="Key Comparison Database">KCDB</abbr> server.</p>
+              </div>
+            </td>
+            <td>
+                  <code>30</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.BASE_URL" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">BASE_URL</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.BASE_URL" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">BASE_URL</span> <span class="o">=</span> <span class="s1">'https://www.bipm.org/api/kcdb'</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>The base url to the <abbr title="Key Comparison Database">KCDB</abbr> <abbr title="Application Programming Interface">API</abbr>.</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.DOMAIN" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">DOMAIN</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.DOMAIN" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">DOMAIN</span> <span class="o">=</span> <span class="n">Domain</span><span class="p">(</span>
+    <span class="n">code</span><span class="o">=</span><span class="s2">"CHEM-BIO"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Chemistry and Biology"</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>The Chemistry and Biology domain.</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.MAX_PAGE_SIZE" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">MAX_PAGE_SIZE</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.MAX_PAGE_SIZE" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">MAX_PAGE_SIZE</span> <span class="o">=</span> <span class="mi">10000</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>The maximum number of elements that can be returned in a single <abbr title="Key Comparison Database">KCDB</abbr> request.</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.timeout" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">timeout</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+      <small class="doc doc-label doc-label-writable"><code>writable</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.timeout" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">timeout</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>The timeout value, in seconds, to use for a <abbr title="Key Comparison Database">KCDB</abbr> request.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The maximum number of seconds to wait for a response from the <abbr title="Key Comparison Database">KCDB</abbr> server. If <code>None</code>, there is no timeout.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.analytes" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">analytes</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.analytes" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">analytes</span><span class="p">()</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Return all Chemistry and Biology analytes.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<a class="autorefs autorefs-internal" title="            Analyte
+
+
+  
+      dataclass
+   (msl.kcdb.types.Analyte)" href="../types/#msl.kcdb.types.Analyte">Analyte</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A list of <a class="autorefs autorefs-internal" title="            Analyte
+
+
+  
+      dataclass
+  " href="../types/#msl.kcdb.types.Analyte">Analyte</a>s.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.categories" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">categories</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.categories" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">categories</span><span class="p">()</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Return all Chemistry and Biology categories.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<a class="autorefs autorefs-internal" title="            Category
+
+
+  
+      dataclass
+   (msl.kcdb.types.Category)" href="../types/#msl.kcdb.types.Category">Category</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A list of <a class="autorefs autorefs-internal" title="            Category
+
+
+  
+      dataclass
+  " href="../types/#msl.kcdb.types.Category">Category</a>'s.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.countries" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">countries</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.countries" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">countries</span><span class="p">()</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Return all countries.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<a class="autorefs autorefs-internal" title="            Country
+
+
+  
+      dataclass
+   (msl.kcdb.types.Country)" href="../types/#msl.kcdb.types.Country">Country</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A list of <a class="autorefs autorefs-internal" title="            Country
+
+
+  
+      dataclass
+  " href="../types/#msl.kcdb.types.Country">Country</a>'s.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.domains" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">domains</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.domains" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">domains</span><span class="p">()</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Return all <abbr title="Key Comparison Database">KCDB</abbr> domains.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<a class="autorefs autorefs-internal" title="            Domain
+
+
+  
+      dataclass
+   (msl.kcdb.types.Domain)" href="../types/#msl.kcdb.types.Domain">Domain</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A list of <a class="autorefs autorefs-internal" title="            Domain
+
+
+  
+      dataclass
+  " href="../types/#msl.kcdb.types.Domain">Domain</a>s.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.filter" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">filter</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.filter" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">filter</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Filter the reference data based on a pattern search.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>data</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="collections.abc.Iterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable">Iterable</a>[<span title="msl.kcdb.kcdb.T">T</span>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An iterable of a <a class="autorefs autorefs-internal" title="            ReferenceData
+
+
+  
+      dataclass
+  " href="../types/#msl.kcdb.types.ReferenceData">ReferenceData</a> subclass.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>pattern</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A <a href="https://regexone.com/">regular-expression</a> pattern to use to filter results.
+Uses the <code>label</code> and <code>value</code> attributes of each item in <code>data</code> to perform the filtering.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>flags</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Pattern flags passed to <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/re.html#re.compile">re.compile</a>.</p>
+              </div>
+            </td>
+            <td>
+                  <code>0</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<span title="msl.kcdb.kcdb.T">T</span>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The filtered reference data.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.get" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">get</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.get" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Send a GET request to the <abbr title="Key Comparison Database">KCDB</abbr> server.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>url</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The URL for the request.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>json</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="            JSON
+
+
+  
+      module-attribute
+   (msl.kcdb.typing.JSON)" href="../typing/#msl.kcdb.typing.JSON">JSON</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A JSON-serialisable object to include in the body of the request.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>params</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="            PARAMS
+
+
+  
+      module-attribute
+   (msl.kcdb.typing.PARAMS)" href="../typing/#msl.kcdb.typing.PARAMS">PARAMS</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Query parameters to include in the URL.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="            Response (msl.kcdb.kcdb.Response)" href="../kcdb/#msl.kcdb.kcdb.Response">Response</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The response.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.metrology_areas" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">metrology_areas</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.metrology_areas" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">metrology_areas</span><span class="p">()</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Return all metrology areas.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<a class="autorefs autorefs-internal" title="            MetrologyArea
+
+
+  
+      dataclass
+   (msl.kcdb.types.MetrologyArea)" href="../types/#msl.kcdb.types.MetrologyArea">MetrologyArea</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A list of <a class="autorefs autorefs-internal" title="            MetrologyArea
+
+
+  
+      dataclass
+  " href="../types/#msl.kcdb.types.MetrologyArea">MetrologyArea</a>s.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.non_ionizing_quantities" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">non_ionizing_quantities</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.non_ionizing_quantities" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">non_ionizing_quantities</span><span class="p">()</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Return all non-Ionizing Radiation quantities.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<a class="autorefs autorefs-internal" title="            NonIonizingQuantity
+
+
+  
+      dataclass
+   (msl.kcdb.types.NonIonizingQuantity)" href="../types/#msl.kcdb.types.NonIonizingQuantity">NonIonizingQuantity</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A list of <a class="autorefs autorefs-internal" title="            NonIonizingQuantity
+
+
+  
+      dataclass
+  " href="../types/#msl.kcdb.types.NonIonizingQuantity">NonIonizingQuantity</a>'s.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.post" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">post</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.post" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Send a POST request to the <abbr title="Key Comparison Database">KCDB</abbr> server.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>url</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The URL for the request.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>json</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="            JSON
+
+
+  
+      module-attribute
+   (msl.kcdb.typing.JSON)" href="../typing/#msl.kcdb.typing.JSON">JSON</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A JSON-serialisable object to include in the body of the request.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>params</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="            PARAMS
+
+
+  
+      module-attribute
+   (msl.kcdb.typing.PARAMS)" href="../typing/#msl.kcdb.typing.PARAMS">PARAMS</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Query parameters to include in the URL.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="            Response (msl.kcdb.kcdb.Response)" href="../kcdb/#msl.kcdb.kcdb.Response">Response</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The response.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.quick_search" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">quick_search</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.quick_search" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">quick_search</span><span class="p">(</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="n">excluded_filters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">included_filters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">keywords</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">page</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">page_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">show_table</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">status</span><span class="o">=</span><span class="n">Status</span><span class="o">.</span><span class="n">PUBLISHED</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Perform a quick search.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>excluded_filters</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="collections.abc.Iterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable">Iterable</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Excluded filters. <em>Example:</em> <code>["cmcServices.AC current", "cmcServices.AC power"]</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>included_filters</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="collections.abc.Iterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable">Iterable</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Included filters. <em>Example:</em> <code>["cmcDomain.CHEM-BIO", "cmcBranches.Dimensional metrology"]</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>keywords</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Search keywords in elasticsearch format. <em>Example:</em> <code>"phase OR test"</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>page</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Page number requested (0 means first page).</p>
+              </div>
+            </td>
+            <td>
+                  <code>0</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>page_size</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Maximum number of elements in a page (maximum value is 10000).</p>
+              </div>
+            </td>
+            <td>
+                  <code>100</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>show_table</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Set to <code>True</code> to return table data.</p>
+              </div>
+            </td>
+            <td>
+                  <code>False</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>status</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-internal" title="            Status (msl.kcdb.types.Status)" href="../types/#msl.kcdb.types.Status">Status</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p><abbr title="Calibration and Measurement Capabilities">CMC</abbr> status.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="msl.kcdb.types.Status.PUBLISHED">PUBLISHED</span></code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="            ResultsQuickSearch (msl.kcdb.types.ResultsQuickSearch)" href="../types/#msl.kcdb.types.ResultsQuickSearch">ResultsQuickSearch</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The <abbr title="Calibration and Measurement Capabilities">CMC</abbr> quick-search results.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="msl.kcdb.chemistry_biology.AsyncChemistryBiology.search" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">search</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+<a href="#msl.kcdb.chemistry_biology.AsyncChemistryBiology.search" class="headerlink" title="Permanent link">¤</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">search</span><span class="p">(</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="n">analyte</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">category</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">countries</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">keywords</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">metrology_area</span><span class="o">=</span><span class="s2">"QM"</span><span class="p">,</span>
+    <span class="n">page</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">page_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">public_date_from</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">public_date_to</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">show_table</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">status</span><span class="o">=</span><span class="n">Status</span><span class="o">.</span><span class="n">PUBLISHED</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Perform a Chemistry and Biology search.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>analyte</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-internal" title="            Analyte
+
+
+  
+      dataclass
+   (msl.kcdb.types.Analyte)" href="../types/#msl.kcdb.types.Analyte">Analyte</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Analyte label. <em>Example:</em> <code>"antimony"</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>category</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-internal" title="            Category
+
+
+  
+      dataclass
+   (msl.kcdb.types.Category)" href="../types/#msl.kcdb.types.Category">Category</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Category label. <em>Example:</em> <code>"5"</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>countries</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-internal" title="            Country
+
+
+  
+      dataclass
+   (msl.kcdb.types.Country)" href="../types/#msl.kcdb.types.Country">Country</a> | <a class="autorefs autorefs-external" title="collections.abc.Iterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable">Iterable</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-internal" title="            Country
+
+
+  
+      dataclass
+   (msl.kcdb.types.Country)" href="../types/#msl.kcdb.types.Country">Country</a>] | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Country label(s). <em>Example:</em> <code>["CH", "FR", "JP"]</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>keywords</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Search keywords in elasticsearch format. <em>Example:</em> <code>"phase OR multichannel OR water"</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>metrology_area</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-internal" title="            MetrologyArea
+
+
+  
+      dataclass
+   (msl.kcdb.types.MetrologyArea)" href="../types/#msl.kcdb.types.MetrologyArea">MetrologyArea</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Metrology area label. <em>Example:</em> <code>"QM"</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>&#39;QM&#39;</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>page</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Page number requested (0 means first page).</p>
+              </div>
+            </td>
+            <td>
+                  <code>0</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>page_size</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Maximum number of elements in a page (maximum value is 10000).</p>
+              </div>
+            </td>
+            <td>
+                  <code>100</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>public_date_from</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-external" title="datetime.date" href="https://docs.python.org/3/library/datetime.html#datetime.date">date</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Minimal publication date. <em>Example:</em> <code>"2005-01-31"</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>public_date_to</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-external" title="datetime.date" href="https://docs.python.org/3/library/datetime.html#datetime.date">date</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Maximal publication date. <em>Example:</em> <code>"2020-06-30"</code></p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>show_table</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Set to <code>True</code> to return table data.</p>
+              </div>
+            </td>
+            <td>
+                  <code>False</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>status</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-internal" title="            Status (msl.kcdb.types.Status)" href="../types/#msl.kcdb.types.Status">Status</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p><abbr title="Calibration and Measurement Capabilities">CMC</abbr> status.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="msl.kcdb.types.Status.PUBLISHED">PUBLISHED</span></code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="            ResultsChemistryBiology (msl.kcdb.types.ResultsChemistryBiology)" href="../types/#msl.kcdb.types.ResultsChemistryBiology">ResultsChemistryBiology</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The <abbr title="Calibration and Measurement Capabilities">CMC</abbr> results for Chemistry and Biology.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
 <h2 id="msl.kcdb.chemistry_biology.ChemistryBiology" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">ChemistryBiology</span>
 
@@ -1353,7 +3143,7 @@
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><a class="autorefs autorefs-internal" title="            KCDB (msl.kcdb.kcdb.KCDB)" href="../kcdb/#msl.kcdb.kcdb.KCDB">KCDB</a></code></p>
+              Bases: <code><a class="autorefs autorefs-internal" title="            SyncKCDB (msl.kcdb.kcdb.SyncKCDB)" href="../kcdb/#msl.kcdb.kcdb.SyncKCDB">SyncKCDB</a></code></p>
 
 
 
@@ -1913,11 +3703,16 @@ Uses the <code>label</code> and <code>value</code> attributes of each item in <c
                 <code>json</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]] | None</code>
+                  <code><a class="autorefs autorefs-internal" title="            JSON
+
+
+  
+      module-attribute
+   (msl.kcdb.typing.JSON)" href="../typing/#msl.kcdb.typing.JSON">JSON</a> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>A JSON-serializable object to include in the body of the request.</p>
+                <p>A JSON-serialisable object to include in the body of the request.</p>
               </div>
             </td>
             <td>
@@ -1929,7 +3724,12 @@ Uses the <code>label</code> and <code>value</code> attributes of each item in <c
                 <code>params</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None</code>
+                  <code><a class="autorefs autorefs-internal" title="            PARAMS
+
+
+  
+      module-attribute
+   (msl.kcdb.typing.PARAMS)" href="../typing/#msl.kcdb.typing.PARAMS">PARAMS</a> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2125,11 +3925,16 @@ Uses the <code>label</code> and <code>value</code> attributes of each item in <c
                 <code>json</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/glossary.html#term-list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]] | None</code>
+                  <code><a class="autorefs autorefs-internal" title="            JSON
+
+
+  
+      module-attribute
+   (msl.kcdb.typing.JSON)" href="../typing/#msl.kcdb.typing.JSON">JSON</a> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>A JSON-serializable object to include in the body of the request.</p>
+                <p>A JSON-serialisable object to include in the body of the request.</p>
               </div>
             </td>
             <td>
@@ -2141,7 +3946,12 @@ Uses the <code>label</code> and <code>value</code> attributes of each item in <c
                 <code>params</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/reference/expressions.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None</code>
+                  <code><a class="autorefs autorefs-internal" title="            PARAMS
+
+
+  
+      module-attribute
+   (msl.kcdb.typing.PARAMS)" href="../typing/#msl.kcdb.typing.PARAMS">PARAMS</a> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2685,7 +4495,7 @@ Uses the <code>label</code> and <code>value</code> attributes of each item in <c
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../examples/physics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Physics">
+          <a href="../../examples/physics_async/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Physics (async)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2695,7 +4505,7 @@ Uses the <code>label</code> and <code>value</code> attributes of each item in <c
                 Previous
               </span>
               <div class="md-ellipsis">
-                Physics
+                Physics (async)
               </div>
             </div>
           </a>

@@ -504,6 +504,8 @@
       
         
       
+        
+      
     
     
     
@@ -640,6 +642,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="examples/physics_async/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics (async)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -655,6 +685,8 @@
   
     
     
+      
+        
       
         
       
@@ -849,6 +881,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/typing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    typing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -949,13 +1009,19 @@
 </div>
 </div>
 <h2 id="user-guide">User Guide<a class="headerlink" href="#user-guide" title="Permanent link">¤</a></h2>
-<p>Three classes are available to search the three metrology domains</p>
+<p>The following classes are available to (synchronously) search the three metrology domains</p>
 <ul>
 <li><a class="autorefs autorefs-internal" title="            ChemistryBiology" href="api/chemistry_biology/#msl.kcdb.chemistry_biology.ChemistryBiology">ChemistryBiology</a> &mdash; Search the Chemistry and Biology database</li>
 <li><a class="autorefs autorefs-internal" title="            Physics" href="api/general_physics/#msl.kcdb.general_physics.Physics">Physics</a> &mdash; Search the General Physics database</li>
 <li><a class="autorefs autorefs-internal" title="            Radiation" href="api/ionizing_radiation/#msl.kcdb.ionizing_radiation.Radiation">Radiation</a> &mdash; Search the Ionizing Radiation database</li>
 </ul>
-<p>See the <a class="autorefs autorefs-internal" title="Examples" href="examples/#examples">examples</a> on how to use each of these classes to extract information from the <abbr title="Key Comparison Database">KCDB</abbr>. Example scripts are also available in the <code>msl-kcdb</code> <a href="https://github.com/MSLNZ/msl-kcdb/tree/main/examples" target="_blank">repository</a>.</p>
+<p>and there are asynchronous (use of <code>async</code>/<code>await</code>) alternatives</p>
+<ul>
+<li><a class="autorefs autorefs-internal" title="            AsyncChemistryBiology" href="api/chemistry_biology/#msl.kcdb.chemistry_biology.AsyncChemistryBiology">AsyncChemistryBiology</a></li>
+<li><a class="autorefs autorefs-internal" title="            AsyncPhysics" href="api/general_physics/#msl.kcdb.general_physics.AsyncPhysics">AsyncPhysics</a></li>
+<li><a class="autorefs autorefs-internal" title="            AsyncRadiation" href="api/ionizing_radiation/#msl.kcdb.ionizing_radiation.AsyncRadiation">AsyncRadiation</a></li>
+</ul>
+<p>See the <a class="autorefs autorefs-internal" title="Examples" href="examples/#examples">examples</a> on how to use these classes to get information from the <abbr title="Key Comparison Database">KCDB</abbr>. Example scripts are also available in the <code>msl-kcdb</code> <a href="https://github.com/MSLNZ/msl-kcdb/tree/main/examples" target="_blank">repository</a>.</p>
 <p>The classes are based on version <code>1.0.13</code> of the <a href="https://www.bipm.org/api/kcdb/cmc/searchData/xsdSchema" target="_blank"><abbr title="Key Comparison Database">KCDB</abbr> XSD Schema</a>. Should the <abbr title="Key Comparison Database">KCDB</abbr> <abbr title="Application Programming Interface">API</abbr> change, please open an <a href="https://github.com/MSLNZ/msl-kcdb/issues" target="_blank">issue</a>.</p>
 
 
